@@ -1,7 +1,5 @@
 FROM ruby
 
-ENV LANG C.UTF-8
-
 WORKDIR /usr/src/mecab
 COPY mecab/mecab-0.996.tar.gz ./
 RUN tar zxf mecab-0.996.tar.gz \
