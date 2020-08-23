@@ -9,7 +9,7 @@ WORKDIR /usr/src/mecab/mecab-0.996
 RUN ./configure \
   && make \
   && make check \
-  && make install \
-  && ldconfig
+  && make install
+RUN ldconfig
 
 CMD ["sh"]
