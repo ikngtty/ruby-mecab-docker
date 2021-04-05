@@ -1,4 +1,4 @@
-FROM ruby
+FROM ruby:3.0.0
 
 WORKDIR /usr/src/mecab
 COPY mecab/mecab-0.996.tar.gz ./
